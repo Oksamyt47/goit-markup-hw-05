@@ -21,7 +21,7 @@ a {
   color: inherit;
 }
 
-ul {
+ul,ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -433,8 +433,9 @@ img {
   
 }
 
-.footer-container {
+.footer-box {
   display: flex;
+  justify-content: space-evenly;
   align-items: baseline;
   padding: 100px 0;
 }
@@ -529,7 +530,13 @@ img {
     margin-bottom: 16px;
 }
 
-.footer-form {}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-label {}
+
 
 .footer-input {
   background-color: transparent;
@@ -537,18 +544,46 @@ img {
     border-radius: 4px;
     width: 264px;
     height: 40px;
+    padding-left: 24px;
+    
+}
+
+.footer-input::placeholder {
+  font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    
 }
 
 .footer-modal-btn {
-  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 16px;
   border-radius: 4px;
-  border: none;
     padding: 8px 24px;
     width: 165px;
     height: 40px;
+    background-color: #4d5ae5;
+    border: none;
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    
+    
 }
 
 .footer-modal-svg {
+  
   fill: #ffffff;
 }
 
