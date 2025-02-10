@@ -482,10 +482,56 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form action="">
-          <input type="text" class="modal-input" name="user-name" />
-          <input type="text" class="modal-input" name="user-phone" />
-          <input type="text" class="modal-input" name="user-email" />
+
+        <form class="modal-form" action="">
+          <div class="modal-field">
+            <label class="modal-label" for="name">Name</label>
+            <div class="input-wrap">
+              <input type="text" class="modal-input" name="name" id="name" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="modal-label" for="phone">Phone</label>
+            <div class="input-wrap">
+              <input type="tel" class="modal-input" name="phone" id="phone" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="modal-label" for="email">Email</label>
+            <div class="input-wrap">
+              <input type="email" class="modal-input" name="email" id="email" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label class="modal-label" for="comment"> Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <input
+            type="checkbox"
+            name="policy"
+            id="policy"
+            class="modal-check visually-hidden"
+            value="true"
+          />
+          <button class="modal-button-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
