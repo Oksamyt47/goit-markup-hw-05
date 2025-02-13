@@ -521,9 +521,9 @@ img {
 .footer-modal-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 16px;
 }
 
@@ -544,12 +544,12 @@ img {
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
-}
-
-.footer-input::placeholder {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+}
+
+.footer-input::placeholder {
     color: #ffffff;
     
 }
@@ -568,10 +568,10 @@ img {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     
     
@@ -617,7 +617,9 @@ img {
 
     transform: translate(-50%, -50%);
 
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -728,7 +730,7 @@ position: relative;
 }
 
 .modal-field-textarea {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -741,6 +743,10 @@ position: relative;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .modal-textarea:focus {
@@ -749,9 +755,6 @@ position: relative;
 }
 
 .modal-input::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
 
